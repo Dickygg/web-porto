@@ -1,0 +1,82 @@
+{
+  "tols_tech": [
+    {
+      "icon": "fa-brands fa-html5",
+      "tech": "HTML",
+      "dataAosDuration": 1000,
+      "kategori": "web"
+    },
+    {
+      "icon": "fa-brands fa-css3-alt",
+      "tech": "CSS",
+      "dataAosDuration": 900,
+      "kategori": "web"
+    },
+    {
+      "icon": "fa-brands fa-js",
+      "tech": "JavaScript",
+      "dataAosDuration": 1000,
+      "kategori": "web"
+    },
+    {
+      "icon": "fa-brands fa-php",
+      "tech": "PHP",
+      "dataAosDuration": 1100,
+      "kategori": "web"
+    },
+    {
+      "icon": "fa-brands fa-laravel",
+      "tech": "Laravel",
+      "dataAosDuration": 1200,
+      "kategori": "web"
+    },
+    {
+      "icon": "fa-brands fa-php",
+      "tech": "CodeIgniter",
+      "dataAosDuration": 1300,
+      "kategori": "web"
+    },
+    {
+      "icon": "fa-solid fa-database",
+      "tech": "MySQL",
+      "dataAosDuration": 1400,
+      "kategori": "data"
+    },
+    {
+      "icon": "fa-brands fa-python",
+      "tech": "Python",
+      "dataAosDuration": 1500,
+      "kategori": "data"
+    },
+    {
+      "icon": "fa-brands fa-github",
+      "tech": "GitHub",
+      "dataAosDuration": 1600,
+      "kategori": "workflow"
+    },
+    {
+      "icon": "fa-brands fa-figma",
+      "tech": "Figma",
+      "dataAosDuration": 1700,
+      "kategori": "desain"
+    },
+    {
+      "icon": "fa-solid fa-diagram-project",
+      "tech": "Draw.io",
+      "dataAosDuration": 1800,
+      "kategori": "desain"
+    },
+    {
+      "icon": "fa-solid fa-table",
+      "tech": "Excel",
+      "dataAosDuration": 1900,
+      "kategori": "desain"
+    },
+    {
+      "icon": "fa-solid fa-code",
+      "tech": "VS Code",
+      "dataAosDuration": 2000,
+      "kategori": "web"
+    }
+  ]
+}

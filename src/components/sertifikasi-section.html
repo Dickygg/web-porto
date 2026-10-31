@@ -1,0 +1,72 @@
+<section id="sertifikasi" class="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6">
+  <!-- Header -->
+  <header class="mb-8 flex flex-wrap items-end justify-between gap-x-6 gap-y-5">
+    <div class="min-w-0">
+      <p
+        class="mb-2 font-mono text-2xl font-bold tracking-widest text-gray-500"
+      >
+        Certification
+      </p>
+      <h2 class="mb-2 text-4xl font-bold text-white text-balance">
+        Certifications &amp; Training
+      </h2>
+      <p class="max-w-[52ch] text-xs leading-relaxed text-neutral-400">
+        A collection of professional certifications and training programs that
+        validate my expertise in web development, system analysis, and data
+        analysis, and reflect my commitment to continuous learning.
+      </p>
+    </div>
+
+    <!-- Filter -->
+    <div
+      id="cert-filters"
+      role="group"
+      aria-label="Filter kategori"
+      class="flex gap-5 font-mono text-[11.5px]"
+    >
+      <button
+        type="button"
+        data-filter="all"
+        aria-pressed="true"
+        class="border-b border-transparent py-1 text-neutral-400 transition-colors hover:text-gray-500 aria-pressed:border-white aria-pressed:text-white focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-[#8a93ff]"
+      >
+        Semua<sup
+          class="ml-1 text-[9px] text-neutral-500"
+          data-count="all"
+        ></sup>
+      </button>
+      <button
+        type="button"
+        data-filter="Certification"
+        aria-pressed="false"
+        class="border-b border-transparent py-1 text-neutral-400 transition-colors hover:text-gray-500 aria-pressed:border-white aria-pressed:text-white focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-[#8a93ff]"
+      >
+        Certification<sup
+          class="ml-1 text-[9px] text-neutral-500"
+          data-count="Certification"
+        ></sup>
+      </button>
+      <button
+        type="button"
+        data-filter="Training"
+        aria-pressed="false"
+        class="border-b border-transparent py-1 text-neutral-400 transition-colors hover:text-white aria-pressed:border-[#8a93ff] aria-pressed:text-white focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-[#8a93ff]"
+      >
+        Training<sup
+          class="ml-1 text-[9px] text-neutral-500"
+          data-count="Training"
+        ></sup>
+      </button>
+    </div>
+  </header>
+
+  <!-- Daftar -->
+  <div id="cert-list" class="border-t border-neutral-700"></div>
+
+  <div
+    class="mt-4 flex justify-between gap-3 font-mono text-[11px] text-neutral-400"
+  >
+    <span id="cert-count"></span>
+    <span>Click a row to view details</span>
+  </div>
+</section>

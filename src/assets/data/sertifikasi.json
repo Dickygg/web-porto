@@ -1,0 +1,63 @@
+{
+  "sertifikasi": [
+    {
+      "tahun": 2025,
+      "nama": "Competency Certification Software Development & System Analyst",
+      "penerbit": "Badan Nasional Sertifikasi Profesi",
+      "deskripsi": "Systems Analyst Scheme. Competence in analyzing requirements, modeling processes, and developing information systems.",
+      "file": "LSP",
+      "skill": [
+        "System Analyst",
+        "Design System",
+        "Software Development",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ],
+      "kategori": "Certification"
+    },
+    {
+      "tahun": 2025,
+      "nama": "Fundamental of Data Analyst",
+      "penerbit": "Komdigi & DQLab",
+      "deskripsi": "This training covers the fundamentals of data processing, cleaning, and analysis to generate meaningful insights and support data-driven decision-making.",
+      "file": "dqlabs-1",
+      "skill": ["SQL", "Python", "Data Processing", "Visualization"],
+      "kategori": "Training"
+    },
+    {
+      "tahun": 2025,
+      "nama": "Practical Real Business Application for Business Intelligence Analyst ",
+      "penerbit": "Komdigi & DQLab",
+      "deskripsi": "This training focuses on applying Business Intelligence concepts to real-world business scenarios, using data analysis to identify trends, generate actionable insights, and support strategic business decisions.",
+      "file": "dqlabs-2",
+      "skill": ["Data Analysis", "Business Intelligence", "Business Insights"],
+      "kategori": "Training"
+    },
+    {
+      "tahun": 2024,
+      "nama": "IT Bootcamp",
+      "penerbit": "Universitas Bina Sarana Informatika",
+      "deskripsi": "An intensive training program focused on information technology fundamentals and web development, covering programming, database management, and the development of web-based applications",
+      "file": "IT-Bootcamp",
+      "skill": [
+        "System Analyst",
+        "Design System",
+        "Software Development",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ],
+      "kategori": "Training"
+    },
+    {
+      "tahun": 2023,
+      "nama": "DATABASE SYSTEM",
+      "penerbit": "Ikatan Ahli Informatika Indonesia",
+      "deskripsi": "This certification covers database system fundamentals, including database design, data management, and SQL operations for structured data retrieval, manipulation, and organization.",
+      "file": "IAII",
+      "skill": ["SQL", "DBMS", "Database Design"],
+      "kategori": "Certification"
+    }
+  ]
+}

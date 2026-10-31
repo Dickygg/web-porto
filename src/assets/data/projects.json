@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "img": "src/assets/img/projects/image1.png",
+      "project": "DISPUSIP Helpdesk",
+      "deskripsi": "Sistem Informasi Ticketing Helpdesk berbasis web menggunakan framework Laravel, untuk mendukung proses pengelolaan tiket layanan secara terstruktur dengan empat peran pengguna (Pengguna, Admin Helpdesk, Petugas Teknis, dan Super Admin). Sistem ini mencakup fitur manajemen tiket, pelacakan SLA, notifikasi via Telegram Bot, serta pencatatan aktivitas pengguna (activity log), guna meningkatkan efisiensi dan transparansi proses penanganan permintaan layanan.",
+      "tech": [
+        "System Analyst",
+        "Design Database",
+        "PHP",
+        "Laravel",
+        "Mysql",
+        "Boostrap",
+        "Draw.io",
+        "Figma"
+      ],
+      "kategori": "web"
+    },
+
+    {
+      "img": "src/assets/img/projects/image3.png",
+      "project": "Weather App",
+      "deskripsi": "Sistem Informasi Ticketing Helpdesk berbasis web menggunakan framework Laravel, untuk mendukung proses pengelolaan tiket layanan secara terstruktur dengan empat peran pengguna",
+      "tech": ["HTML", "CSS", "Javascript", "Tailwinds", "Vite"],
+      "kategori": "web"
+    },
+    {
+      "img": "src/assets/img/projects/image2.png",
+      "project": "Web Portofolio",
+      "deskripsi": "Sistem Informasi Ticketing Helpdesk berbasis web menggunakan framework Laravel, untuk mendukung proses pengelolaan tiket layanan secara terstruktur dengan empat peran pengguna",
+      "tech": ["HTML", "CSS", "Javascript", "Tailwinds", "Vite"],
+      "kategori": "web"
+    },
+    {
+      "img": "src/assets/img/projects/systemdesian1.png",
+      "project": "Perancangan Mobile App Pengelolaan Sampah",
+      "deskripsi": "Sistem Informasi Ticketing Helpdesk berbasis web menggunakan framework Laravel, untuk mendukung proses pengelolaan tiket layanan secara terstruktur dengan empat peran pengguna",
+      "tech": ["HTML", "CSS", "Javascript", "Tailwinds", "Vite"],
+      "kategori": "system"
+    },
+    {
+      "img": "src/assets/img/projects/systemdesian2.png",
+      "project": "Perancangan Sistem Informasi Pelanyanan Klinik",
+      "deskripsi": "Sistem Informasi Ticketing Helpdesk berbasis web menggunakan framework Laravel, untuk mendukung proses pengelolaan tiket layanan secara terstruktur dengan empat peran pengguna",
+      "tech": ["HTML", "CSS", "Javascript", "Tailwinds", "Vite"],
+      "kategori": "system"
+    }
+  ]
+}

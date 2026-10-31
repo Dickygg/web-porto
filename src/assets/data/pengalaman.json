@@ -1,0 +1,40 @@
+{
+  "work_experince": [
+    {
+      "img": "src/assets/img/work1_1.jpeg",
+      "periode_awal": "Mei 2026",
+      "periode_akhir": "Juni 2026",
+      "posisi": "Intern Junior Web Developer",
+      "perusahaan": "Dinas Perpustakaan Dan Kearsipan DKI Jakarta",
+      "deskripsi": "Merancang dan mengimplementasikan Sistem Informasi Ticketing Helpdesk berbasis web menggunakan framework Laravel, untuk mendukung proses pengelolaan tiket layanan secara terstruktur dengan empat peran pengguna (Pengguna, Admin Helpdesk, Petugas Teknis, dan Super Admin). Sistem ini mencakup fitur manajemen tiket, pelacakan SLA, notifikasi via Telegram Bot, serta pencatatan aktivitas pengguna (activity log), guna meningkatkan efisiensi dan transparansi proses penanganan permintaan layanan.",
+      "skill": [
+        "System Analyst",
+        "Design Database",
+        "PHP",
+        "Laravel",
+        "Mysql",
+        "Boostrap",
+        "Draw.io",
+        "Figma"
+      ]
+    },
+    {
+      "img": "src/assets/img/work22.1.jpeg",
+      "periode_awal": "Oktober 2025",
+      "periode_akhir": "Desember 2025",
+      "posisi": "Intern Junior Web Developer",
+      "perusahaan": "Dinas Perpustakaan Dan Kearsipan DKI Jakarta",
+      "deskripsi": "Berkontribusi dalam proses redesign dan refactoring website Dinas Perpustakaan dan Kearsipan Provinsi DKI Jakarta (DISPUSIP), dengan fokus pada peningkatan struktur kode, tampilan antarmuka, dan pengalaman pengguna. Serta implementasi menggunakan framework Laravel.",
+      "skill": [
+        "System Analyst",
+        "Design Database",
+        "PHP",
+        "Laravel",
+        "Mysql",
+        "Boostrap",
+        "Draw.io",
+        "Figma"
+      ]
+    }
+  ]
+}
