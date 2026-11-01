@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "img": "src/assets/img/projects/image1.png",
+      "img": "/img/projects/image1.png",
       "project": "DISPUSIP Helpdesk",
       "deskripsi": "A web-based Helpdesk Ticketing Information System developed using the Laravel framework to streamline and organize service request management through four user roles: User, Helpdesk Admin, Technical Staff, and Super Admin. The system includes ticket management, SLA tracking, Telegram Bot notifications, and user activity logging to improve the efficiency, transparency, and accountability of the service request handling process.",
       "tech": [
@@ -18,7 +18,7 @@
     },
 
     {
-      "img": "src/assets/img/projects/image3.png",
+      "img": "/img/projects/image3.png",
       "project": "Weather App",
       "deskripsi": "A web-based weather application built using Vanilla JavaScript and the Open-Meteo API to provide current weather information and daily forecasts. The application displays weather conditions such as temperature, feels-like temperature, humidity, and wind speed, along with a five-day weather forecast for selected locations.",
       "tech": [
@@ -32,21 +32,21 @@
       "kategori": "web"
     },
     {
-      "img": "src/assets/img/projects/image2.png",
+      "img": "/img/projects/image2.png",
       "project": "Web Portofolio",
       "deskripsi": "A personal portfolio website designed and developed to showcase my professional background, technical skills, work experience, and projects. Built with a clean, modern, and responsive design to provide an engaging user experience while highlighting my journey and capabilities in web development, system analysis, and data analysis.",
       "tech": ["HTML", "CSS", "Javascript", "Tailwinds", "Vite"],
       "kategori": "web"
     },
     {
-      "img": "src/assets/img/projects/systemdesian1.png",
+      "img": "/img/projects/systemdesian1.png",
       "project": "Perancangan Mobile App Pengelolaan Sampah",
       "deskripsi": "A mobile application concept designed to simplify waste management through digital solutions. The application focuses on helping users manage waste-related activities, access waste management information, and encourage more organized and sustainable waste disposal practices.",
       "tech": ["System Analysis", "Information System Design", "UI/UX Design"],
       "kategori": "system"
     },
     {
-      "img": "src/assets/img/projects/systemdesian2.png",
+      "img": "/img/projects/systemdesian2.png",
       "project": "Perancangan Sistem Informasi Pelanyanan Klinik",
       "deskripsi": "Designed and developed a Clinic Management Information System to support the digitalization of clinic operations and streamline healthcare service management. This project involved system analysis, requirements modeling, and application design to improve administrative efficiency and service delivery. The research findings from this project have also been published in an academic journal.",
       "tech": ["System Analysis", "Information System Design", "UI/UX Design"],

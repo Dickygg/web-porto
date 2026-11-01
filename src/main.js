@@ -2,6 +2,21 @@ import "./style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// Import HTML components
+import heroSection from "./components/hero-section.html?raw";
+import aboutSection from "./components/about-section.html?raw";
+import workSection from "./components/work-section.html?raw";
+import skillSection from "./components/skill-section.html?raw";
+import projectSection from "./components/project-section.html?raw";
+import sertifikasiSection from "./components/sertifikasi-section.html?raw";
+import navbar from "./components/navbar.html?raw";
+
+// import Data
+import pengalaman from "./assets/data/pengalaman.json";
+import { sertifikasi } from "./assets/data/sertifikasi.json";
+import project from "./assets/data/projects.json";
+import skill from "./assets/data/tech.json";
+
 const preloader = document.getElementById("preloader");
 const nameText = document.getElementById("name-text");
 const loadingBar = document.getElementById("loading-bar");
@@ -28,27 +43,43 @@ setTimeout(() => {
 }, 4000);
 
 // load component HTML
-async function loadcomponent(id, file) {
-  const element = document.getElementById(id);
+// cara production
 
-  const response = await fetch(file);
-  element.innerHTML = await response.text();
+// Load component HTML
+function loadcomponent(id, html) {
+  const element = document.getElementById(id);
+  element.innerHTML = html;
 }
-await loadcomponent("hero-section", "/src/components/hero-section.html");
-await loadcomponent("about-section", "/src/components/about-section.html");
-await loadcomponent("work-section", "/src/components/work-section.html");
-await loadcomponent("skill-section", "/src/components/skill-section.html");
-await loadcomponent("project-section", "/src/components/project-section.html");
-await loadcomponent(
-  "sertifikasi-section",
-  "/src/components/sertifikasi-section.html",
-);
+
+loadcomponent("hero-section", heroSection);
+loadcomponent("about-section", aboutSection);
+loadcomponent("work-section", workSection);
+loadcomponent("skill-section", skillSection);
+loadcomponent("project-section", projectSection);
+loadcomponent("sertifikasi-section", sertifikasiSection);
+
+// cara lokal
+// async function loadcomponent(id, file) {
+//   const element = document.getElementById(id);
+
+//   const response = await fetch(file);
+//   element.innerHTML = await response.text();
+// }
+// await loadcomponent("hero-section", "/src/components/hero-section.html");
+// await loadcomponent("about-section", "/src/components/about-section.html");
+// await loadcomponent("work-section", "/src/components/work-section.html");
+// await loadcomponent("skill-section", "/src/components/skill-section.html");
+// await loadcomponent("project-section", "/src/components/project-section.html");
+// await loadcomponent(
+//   "sertifikasi-section",
+//   "/src/components/sertifikasi-section.html",
+// );
 
 AOS.init();
 
 // navbar
 async function init() {
-  await loadcomponent("navbar", "/src/components/navbar.html");
+  loadcomponent("navbar", navbar);
 
   const navWrapper = document.getElementById("nav-wrapper");
   const navinside = document.getElementById("navbarinside");
@@ -114,17 +145,9 @@ type();
 // end of animation typing
 
 // section work Experince
-// get data work Experince
-async function get_dataWork() {
-  const response = await fetch("src/assets/data/pengalaman.json");
-  const data = await response.json();
 
-  return data;
-}
-
-const data_work = await get_dataWork();
 const experince = document.querySelector("#track");
-experince.innerHTML = data_work.work_experince
+experince.innerHTML = pengalaman.work_experince
   .map((item) => {
     return `
   <article
@@ -240,16 +263,9 @@ update();
 // end Carousel
 
 // section Tech
-// get Data
-async function get_datatech() {
-  const response = await fetch("src/assets/data/tech.json");
-  const data = await response.json();
 
-  return data;
-}
-const data_tech = await get_datatech();
 const tech = document.getElementById("tech");
-tech.innerHTML = data_tech.tols_tech
+tech.innerHTML = skill.tols_tech
   .map((item) => {
     return `<div
                   class="flex items-center gap-3 h-11 px-4 rounded-md border border-white/10 bg-white/[0.03] text-gray-300 text-sm hover:bg-white/[0.08] hover:border-white/20 hover:text-white transition duration-200"
@@ -266,13 +282,6 @@ tech.innerHTML = data_tech.tols_tech
 // end section Tech
 
 // Section project
-// get data project
-async function get_projects() {
-  const response = await fetch("src/assets/data/projects.json");
-  const data = await response.json();
-
-  return data;
-}
 // filter data project
 const filterButtons = document.querySelectorAll(".filter-btn");
 let filterprojects = "web";
@@ -308,10 +317,9 @@ buttons.forEach((btn) => {
   btn.addEventListener("click", () => setActive(btn));
 });
 
-const data_projects = await get_projects();
 const projects = document.querySelector("#project");
 async function renderProject() {
-  projects.innerHTML = data_projects.projects
+  projects.innerHTML = project.projects
     .filter(
       (item) => filterprojects === "all" || item.kategori === filterprojects,
     )
@@ -352,14 +360,6 @@ async function renderProject() {
 renderProject();
 
 // serifikasi section
-async function get_sertifikasi() {
-  const response = await fetch("src/assets/data/sertifikasi.json");
-  const data = await response.json();
-
-  return data;
-}
-const { sertifikasi } = await get_sertifikasi();
-console.log(sertifikasi);
 document.querySelector("#cert-list").innerHTML = sertifikasi
   .map((item) => {
     return `          <div
@@ -431,7 +431,7 @@ document.querySelector("#cert-list").innerHTML = sertifikasi
                       .join("")}
                     </ul>
                     <a
-                      href="src/assets/certification/${item.file}.pdf"
+                      href="certification/${item.file}.pdf"
                       target="_blank"
                       rel="noopener"
                       class="self-start border-b border-white pb-0.5 text-xs font-semibold text-white transition-colors "
@@ -443,7 +443,7 @@ document.querySelector("#cert-list").innerHTML = sertifikasi
                   <div
                     class="cert-preview relative flex aspect-[1.42] max-w-65 flex-col items-center gap-1.5 overflow-hidden rounded-[3px] border border-neutral-700 bg-[#0d0d12] p-3 sm:col-start-3 sm:max-w-full"
                   >
-                    <img src="src/assets/img/certification/${item.file}.png" alt="Serifikasi" loading="lazy"/>
+                    <img src="img/certification/${item.file}.png" alt="Serifikasi" loading="lazy"/>
                   </div>
                 </div>
               </div>

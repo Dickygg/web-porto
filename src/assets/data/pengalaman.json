@@ -1,7 +1,7 @@
 {
   "work_experince": [
     {
-      "img": "src/assets/img/work1_1.jpeg",
+      "img": "img/work1_1.jpeg",
       "periode_awal": "Mei 2026",
       "periode_akhir": "Juni 2026",
       "posisi": "Intern Junior Web Developer",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "img": "src/assets/img/work22.1.jpeg",
+      "img": "img/work22.1.jpeg",
       "periode_awal": "Oktober 2025",
       "periode_akhir": "Desember 2025",
       "posisi": "Intern Junior Web Developer",
