@@ -350,7 +350,9 @@ async function renderProject() {
         .join("")}
     </ul>
     ${
-      item.kategori === "web" ? "" : `<button class="paper-btn">Tombol</button>`
+      item.kategori === "web"
+        ? ""
+        : `<button class="paper-btn hidden">Tombol</button>`
     }
   </div>
 </div>`;
