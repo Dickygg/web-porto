@@ -95,7 +95,7 @@ async function init() {
       navWrapper.className =
         "container md:mx-auto md:px-50 inset-x-0  fixed z-50 top-0 md:mt-4 transition-all duration-200";
       navinside.className =
-        "md:rounded-full navbar bg-black/800 border border-gray-500 backdrop-blur-sm shadow-lg transition-all duration-300 font-mono";
+        "md:rounded-full navbar bg-black/800 md:border md:border-gray-500 backdrop-blur-sm shadow-lg transition-all duration-300 font-mono";
       // navMenu.classList.remove("mx-20");
     } else {
       navWrapper.className = "mt-0 transition-all duration-200 z-50 ";
