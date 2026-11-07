@@ -326,14 +326,24 @@ async function renderProject() {
     .map((item) => {
       return `<div class="card w-full overflow-hidden rounded-xl border border-gray-700 shadow-sm flex flex-col h-full" data-aos="fade-up"
      data-aos-duration="2000">
-  <figure class="aspect-video overflow-hidden">
-    <img
-      src="${item.img}"
-      alt="${item.project}"
-      loading="lazy"
-      class="w-full h-full object-cover"
-    />
-  </figure>
+<figure class="group relative aspect-video overflow-hidden cursor-pointer">
+  <img
+    src="${item.img}"
+    alt="${item.project}"
+    loading="lazy"
+    class="w-full h-full object-cover transition-transform duration-500 "
+  />
+
+  <!-- Overlay -->
+  <a
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-150"
+  >
+    <i class="fa-solid fa-arrow-up-right-from-square  text-white"></i>
+  </a>
+</figure>
   <div class="card-body flex-1">
     <h2 class="card-title text-xl font-bold text-white">
       ${item.project}
@@ -349,11 +359,6 @@ async function renderProject() {
         )
         .join("")}
     </ul>
-    ${
-      item.kategori === "web"
-        ? ""
-        : `<button class="paper-btn hidden">Tombol</button>`
-    }
   </div>
 </div>`;
     })
