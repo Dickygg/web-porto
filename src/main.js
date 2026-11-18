@@ -110,38 +110,38 @@ init();
 // end navbar
 
 // animation typing
-const words = ["System Analyst", "Web Developer", "Data Analyst"];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+// const words = ["System Analyst", "Web Developer", "Data Analyst"];
+// let wordIndex = 0;
+// let charIndex = 0;
+// let isDeleting = false;
 
-function type() {
-  const currentWord = words[wordIndex];
-  const el = document.getElementById("typewriter");
+// function type() {
+//   const currentWord = words[wordIndex];
+//   const el = document.getElementById("typewriter");
 
-  if (isDeleting) {
-    el.textContent = currentWord.substring(0, charIndex - 1);
-    charIndex--;
-  } else {
-    el.textContent = currentWord.substring(0, charIndex + 1);
-    charIndex++;
-  }
+//   if (isDeleting) {
+//     el.textContent = currentWord.substring(0, charIndex - 1);
+//     charIndex--;
+//   } else {
+//     el.textContent = currentWord.substring(0, charIndex + 1);
+//     charIndex++;
+//   }
 
-  let speed = isDeleting ? 50 : 100;
+//   let speed = isDeleting ? 50 : 100;
 
-  if (!isDeleting && charIndex === currentWord.length) {
-    speed = 1500; // jeda sebelum mulai hapus
-    isDeleting = true;
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    wordIndex = (wordIndex + 1) % words.length;
-    speed = 300; // jeda sebelum ngetik kata baru
-  }
+//   if (!isDeleting && charIndex === currentWord.length) {
+//     speed = 1500; // jeda sebelum mulai hapus
+//     isDeleting = true;
+//   } else if (isDeleting && charIndex === 0) {
+//     isDeleting = false;
+//     wordIndex = (wordIndex + 1) % words.length;
+//     speed = 300; // jeda sebelum ngetik kata baru
+//   }
 
-  setTimeout(type, speed);
-}
+//   setTimeout(type, speed);
+// }
 
-type();
+// type();
 // end of animation typing
 
 // section work Experince
